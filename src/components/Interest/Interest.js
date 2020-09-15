@@ -1,5 +1,6 @@
 import React from 'react'
 import '../style.css'
+import InterestData from './InterestData'
 import Sport from '../avatar/Sport'
 import IT from '../avatar/IT'
 
@@ -11,33 +12,17 @@ const Interest = () => {
                     <h2 className="text-center">Interest</h2>
                     <div className="mb-5 heading-border"></div>
                 </div>
-                <div className="resume-item col-md-12 col-sm-12 " > 
-                    <div className="card one mx-0 p-4 mb-5">
-                        <div className="resume-content text-md-left" >
-                            <div className="row">
-                                <div className="col-md-9">
-                                    <h4 className="mb-3">Sport</h4>
-                                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                                </div>
-                                <div className="col-md-3 mx-auto">
-                                    <Sport src={Sport} alt={Sport}/>    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card one mx-0 p-4 mb-5">
-                        <div className="resume-content text-md-left" >
-                            <div className="row">
-                                <div className="col-md-9">
-                                    <h4 className="mb-3">IT Geek</h4>
-                                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                                </div>
-                                <div className="col-md-3 mx-auto">
-                                    <IT src={IT} alt={IT}/>    
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
+                <div className="resume-item col-md-12 col-sm-12 " >
+                    <InterestData
+                        header="Sport"
+                        content="Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."
+                        img = {<Sport src={Sport} alt={Sport}/>}
+                    />
+                    <InterestData
+                        header="IT Geek"
+                        content="Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."
+                        img = {<IT src={IT} alt={IT}/>}
+                    /> 
                 </div>
             </div>
         </section>

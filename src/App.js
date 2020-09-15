@@ -7,6 +7,7 @@ import About from './components/About'
 import Portfolio from './components/Portfolio/Portfolio'
 import Experience from './components/Experience/Experience'
 import Interest from './components/Interest/Interest'
+import Awards from './components/Awards/Awards'
 import './App.css'
 import './components/style.css'
 import 'animate.css/animate.css'
@@ -50,13 +51,13 @@ function App() {
         <div className="container-fluid p-0">
             <Home 
                 name= "Al Hambra"
-                description = "Come and meet other developers interested in the JavaScript and its library in the Greater Jakarta area
-                Twitter: @JakartaJS and we user the hashtag #jakartajs"
+                description = "Come and meet other developers interested in the JavaScript and its library in the Greater Jakarta area Twitter: @JakartaJS and we user the hashtag #jakartajs"
             />
             <About/>
             <Experience/>
             <Portfolio/>
             <Interest/>
+            <Awards/>
         </div>
     </div>
   );

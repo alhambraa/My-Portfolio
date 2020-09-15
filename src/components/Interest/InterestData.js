@@ -12,7 +12,7 @@ const InterestData = ({header,content,img}) => {
                         <p>{content}</p>
                     </div>
                     <div className="col-md-3 mx-auto">
-                        <Sport src={Sport} alt={Sport}/>    
+                        {img}   
                     </div>
                 </div>
             </div>
@@ -23,13 +23,13 @@ const InterestData = ({header,content,img}) => {
 InterestData.propTypes  = {
     header : PropTypes.string.isRequired,
     content : PropTypes.string.isRequired,
-    date : PropTypes.string.isRequired,
+    img : PropTypes.string.isRequired,
 }
 
 InterestData.defaultProps = {
     header : "Portfolio",
     content : "My Project Was here",
-    date : "01-01-1999"
+    img : "image was here"
 }
 
 
