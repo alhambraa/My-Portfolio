@@ -5,7 +5,8 @@ import Avatar from './components/avatar/Avatar'
 import Home from './components/Home'
 import About from './components/About'
 import Portfolio from './components/Portfolio/Portfolio'
-import Education from './components/Education/Education'
+import Experience from './components/Experience/Experience'
+import Interest from './components/Interest/Interest'
 import './App.css'
 import './components/style.css'
 import 'animate.css/animate.css'
@@ -29,19 +30,19 @@ function App() {
                       <a className="nav-link js-scroll-trigger" href="#home">Home</a>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#experience">About</a>
+                      <a className="nav-link js-scroll-trigger" href="#about">About</a>
+                  </li>
+                  <li className="nav-item">
+                      <a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
                   </li>
                   <li className="nav-item">
                       <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#skills">Education</a>
+                      <a className="nav-link js-scroll-trigger" href="#interest">Interest</a>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#awards">Award</a>
-                  </li>
-                  <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                      <a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
                   </li>
               </ul>
           </div>
@@ -53,9 +54,9 @@ function App() {
                 Twitter: @JakartaJS and we user the hashtag #jakartajs"
             />
             <About/>
+            <Experience/>
             <Portfolio/>
-            <Education/>
-
+            <Interest/>
         </div>
     </div>
   );

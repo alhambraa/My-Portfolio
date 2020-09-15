@@ -22,12 +22,18 @@
     height: 155px;
 }
 
-.interest{
+.hobby{
     width: 120px;
     height: 120px;
 }
 
-.hobby{
-    width: 120px;
-    height: 120px;
+.sport{
+    width: 150px;
+    height: 150px;
+}
+
+
+.it{
+    width: 150px;
+    height: 150px;
 }
