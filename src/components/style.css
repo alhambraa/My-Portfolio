@@ -41,6 +41,7 @@ a:hover,
 a:focus,
 a:active {
     color: #0f72c1;
+    text-decoration: none;
 }
 
 .subheading {

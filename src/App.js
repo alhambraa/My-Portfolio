@@ -1,19 +1,54 @@
 import React from 'react';
-// import logo from './logo.svg';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+  } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Avatar from './components/avatar/Avatar'
-import Home from './components/Home'
-import About from './components/About'
-import Portfolio from './components/Portfolio/Portfolio'
-import Experience from './components/Experience/Experience'
-import Interest from './components/Interest/Interest'
-import Awards from './components/Awards/Awards'
+import Home from './pages/Home'
+import About from './pages/About'
+import Portfolio from './pages/Portfolio'
+import Experience from './pages/Experience'
+import Interest from './pages/Interest'
+import Awards from './pages/Awards'
 import './App.css'
 import './components/style.css'
 import 'animate.css/animate.css'
 
 function App() {
+  const routes = [
+      {
+        path: "/",
+        exact: true,
+        main: () => <Home />
+      },
+      {
+        path: "/about",
+        main: () => <About />
+      },
+      {
+        path: "/portfolio",
+        main: () => <Portfolio />
+      },
+      {
+        path: "/experience",
+        main: () => <Experience />
+      }
+      ,
+      {
+        path: "/interest",
+        main: () => <Interest />
+      }
+      ,
+      {
+        path: "/awards",
+        main: () => <Awards />
+      }
+  ]
   return (
+    <Router>
     <div className="App">
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
           <a className="navbar-brand js-scroll-trigger" href="#page-top">
@@ -28,38 +63,40 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav">
                   <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#home">Home</a>
+                        <Link to="/"><a className="nav-link js-scroll-trigger">Home</a></Link>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#about">About</a>
+                        <Link to="/about"><a className="nav-link js-scroll-trigger">About</a></Link>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                        <Link to="/portfolio"><a className="nav-link js-scroll-trigger">Portfolio</a></Link>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                        <Link to="/experience"><a className="nav-link js-scroll-trigger">Experience</a></Link>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#interest">Interest</a>
+                        <Link to="/interest"><a className="nav-link js-scroll-trigger">Interest</a></Link>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
+                        <Link to="/awards"><a className="nav-link js-scroll-trigger">Awards</a></Link>
                   </li>
               </ul>
           </div>
         </nav>
-        <div className="container-fluid p-0">
-            <Home 
-                name= "Al Hambra"
-                description = "Come and meet other developers interested in the JavaScript and its library in the Greater Jakarta area Twitter: @JakartaJS and we user the hashtag #jakartajs"
-            />
-            <About/>
-            <Experience/>
-            <Portfolio/>
-            <Interest/>
-            <Awards/>
-        </div>
+        <Switch>
+            {routes.map((route, index) => (
+              // Render more <Route>s with the same paths as
+              // above, but different components this time.
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                children={<route.main />}
+              />
+            ))}
+          </Switch>
     </div>
+    </Router>
   );
 }
 
