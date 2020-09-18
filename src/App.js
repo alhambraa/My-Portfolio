@@ -63,22 +63,22 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav">
                   <li className="nav-item">
-                        <Link to="/"><a className="nav-link js-scroll-trigger">Home</a></Link>
+                        <Link to="/">Home</Link>
                   </li>
                   <li className="nav-item">
-                        <Link to="/about"><a className="nav-link js-scroll-trigger">About</a></Link>
+                        <Link to="/about">About</Link>
                   </li>
                   <li className="nav-item">
-                        <Link to="/portfolio"><a className="nav-link js-scroll-trigger">Portfolio</a></Link>
+                        <Link to="/portfolio">Portfolio</Link>
                   </li>
                   <li className="nav-item">
-                        <Link to="/experience"><a className="nav-link js-scroll-trigger">Experience</a></Link>
+                        <Link to="/experience">Experience</Link>
                   </li>
                   <li className="nav-item">
-                        <Link to="/interest"><a className="nav-link js-scroll-trigger">Interest</a></Link>
+                        <Link to="/interest">Interest</Link>
                   </li>
                   <li className="nav-item">
-                        <Link to="/awards"><a className="nav-link js-scroll-trigger">Awards</a></Link>
+                        <Link to="/awards">Awards</Link>
                   </li>
               </ul>
           </div>

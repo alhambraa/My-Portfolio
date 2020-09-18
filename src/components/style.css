@@ -34,12 +34,24 @@ h2 {
 }
 
 a {
-    color: #2196f3;
+    color: #495057;
+    font-size: 1.1rem;
 }
 
 a:hover,
 a:focus,
 a:active {
+    color: white;
+    text-decoration: none;
+}
+
+ul li {
+    color: #2196f3;
+}
+
+ul li:hover,
+ul li:focus,
+ul li:active {
     color: #0f72c1;
     text-decoration: none;
 }
@@ -54,6 +66,10 @@ a:active {
 /*==================================================
                   SOCIAL-ICON
 ====================================================*/
+  .list-social-icons ul li {
+      color: #495057;
+  }  
+
   .list-social-icons a {
       color: #495057;
   }

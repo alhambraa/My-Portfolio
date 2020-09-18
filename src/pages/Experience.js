@@ -9,23 +9,23 @@ const Experience = () => {
                     <h2 className="text-center">Experience</h2>
                     <div className="mb-5 heading-border"></div>
                 </div>
-                <div class="main-experience" id="experience-box">
-                    <div class="experience">
-                      <div class="experience-icon"></div>
-                      <div class="experience-content">
-                          <span class="date">Mar 2018 - Mar Now</span>
-                          <h5 class="title">Asisstant Officer of HC System PT INALUM (Persero)</h5>
-                          <p class="description">
+                <div className="main-experience" id="experience-box">
+                    <div className="experience">
+                      <div className="experience-icon"></div>
+                      <div className="experience-content">
+                          <span className="date">Mar 2018 - Mar Now</span>
+                          <h5 className="title">Asisstant Officer of HC System PT INALUM (Persero)</h5>
+                          <p className="description">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
                           </p>
                      </div>
                     </div>
-                    <div class="experience">
-                      <div class="experience-icon"></div>
-                      <div class="experience-content">
-                          <span class="date">Jun 2017 - Feb 2018</span>
-                          <h5 class="title">IT Staff of Quality Assurance Office UGM</h5>
-                          <p class="description">
+                    <div className="experience">
+                      <div className="experience-icon"></div>
+                      <div className="experience-content">
+                          <span className="date">Jun 2017 - Feb 2018</span>
+                          <h5 className="title">IT Staff of Quality Assurance Office UGM</h5>
+                          <p className="description">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
                           </p>
                       </div>
