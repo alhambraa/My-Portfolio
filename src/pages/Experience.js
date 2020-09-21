@@ -16,7 +16,7 @@ const Experience = () => {
                           <span className="date">Mar 2018 - Mar Now</span>
                           <h5 className="title">Asisstant Officer of HC System PT INALUM (Persero)</h5>
                           <p className="description">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                                Experienced Assistant Officer with a demonstrated history of working in the mining & metals industry. Skilled in PHP, Data Entry, CodeIgniter, Bootstrap, and Cascading Style Sheets (CSS).
                           </p>
                      </div>
                     </div>
@@ -26,7 +26,7 @@ const Experience = () => {
                           <span className="date">Jun 2017 - Feb 2018</span>
                           <h5 className="title">IT Staff of Quality Assurance Office UGM</h5>
                           <p className="description">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                                Quality Assurance Office Universitas Gadjah Mada (KJM UGM) was established on 27 November 2001 in accordance with the Rector’s Decree number 123/P/SK/Set.R/2001. KJM UGM in accordance with the decree founding the task to do
                           </p>
                       </div>
                     </div>
